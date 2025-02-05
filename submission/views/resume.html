@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .icon {
+            font-size: 20px;
+            color: white;
+            margin-right: 15px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .description {
+            max-width: 500px;
+        }
+        .resume-button {
+            display: inline-block;
+            margin-top: 0px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .resume-button:hover {
+            background-color: #0056b3;
+        }
+        .resume {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .resume h2 {
+            text-align: center;
+        }
+        .resume-section {
+            margin-bottom: 20px;
+        }
+        .resume-section h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 50px;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project1-img {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            padding: 15px 0;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="home.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <div class="icon">&#9733;</div>
+    </nav>
+
+    <div class="container">
+        <img src="../resources/img/profile.jpg" alt="My Profile Picture" class="profile-img">
+        <div class="description">
+            <h2>About Me</h2>
+            <p>I am a student enrolled in University of Colorado Boulder majoring in Computer Science. I am passionate about technology, design, and innovation. Welcome to my personal website where I share my hobbies, projects, and professional journey.</p>
+            <a href="../resources/img/resume.pdf" target="_blank" download="resume.pdf" class="resume-button">Download Resume</a>
+        </a>
+        </div>
+    </div>
+
+    <div class="resume">
+        <h2>My Resume</h2>
+        <div class="resume-section">
+            <h3>Education</h3>
+            <p><strong>University of Colorado Boulder</strong> – B.S. in Computer Science (Expected May 2027)</p>
+            <p>GPA: 3.286 | Concentrations: Object-Oriented Programming</p>
+        </div>
+        <div class="resume-section">
+            <h3>Experience</h3>
+            <p><strong>NVIDIA</strong> – Deep Learning Institute and Training Solutions (Jan 2024)</p>
+            <p>9-hour workshop on building NLP applications</p>
+            <p><strong>Apple</strong> – App Bold Design-A-Thon (Feb 2024)</p>
+            <p>36-hour event fostering innovation and collaboration</p>
+        </div>
+        <div class="resume-section">
+            <h3>Projects</h3>
+            <p><strong>Candyland</strong> – C++ text-based game with shop, traps, characters, and perks</p>
+            <p><strong>StudiVerse</strong> – Multi-feature app integrating campus utilities</p>
+            <p><strong>Professional Website</strong> – Multi-page website showcasing my professional career and personal interests</p>
+        </div>
+        <div class="resume-section">
+            <h3>Skills</h3>
+            <p>Programming: MATLAB, C++, C</p>
+            <p>Tools: VSCode, JupyterLab, Figma, GitHub, Docker</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>Contact Me: shca6876@colorado.edu</div>
+            <div>
+                <a href="https://www.linkedin.com/in/shane-cao">
+                    <i class="fab fa-linkedin"></i>LinkedIn
+                </a> | 
+                <a href="https://github.com/Cao-Shane">
+                    <i class="fab fa-github"></i>GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

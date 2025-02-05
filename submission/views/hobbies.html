@@ -36,11 +36,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 100px 50px 50px 50px;
+            padding: 50px;
         }
         .profile-img {
-            width: 350px;
-            height: 350px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             margin-right: 20px;
         }
@@ -59,6 +59,26 @@
         }
         .resume-button:hover {
             background-color: #0056b3;
+        }
+        .hobbies-container {
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .card img {
+            width: 100%; /* Ensures the image fills the card width */
+            height: 150px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 10px;
         }
         .footer {
             background-color: #333;
@@ -96,22 +116,43 @@
     </style>
 </head>
 <body>
-    
     <nav class="navbar">
         <div>
-            <a href="/submission/views/home.html">Home</a>
-            <a href="/submission/views/hobbies.html">Hobbies</a>
-            <a href="/submission/views/projects.html">Projects</a>
+            <a href="home.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
         </div>
         <div class="icon">&#9733;</div> <!-- Star icon -->
     </nav>
 
     <div class="container">
-        <img src="/submission/resources/img/profile.jpg" alt="My Profile Picture" class="profile-img">
+        <img src="../resources/img/profile.jpg" alt="My Profile Picture" class="profile-img">
         <div class="description">
-            <h2>Shane Cao</h2>
+            <h2>About Me</h2>
             <p>I am a student enrolled in University of Colorado Boulder majoring in Computer Science. I am passionate about technology, design, and innovation. Welcome to my personal website where I share my hobbies, projects, and professional journey.</p>
-            <a href="/submission/views/resume.html" class="resume-button">View My Resume</a>
+            <a href="resume.html" class="resume-button">View My Resume</a>
+        </div>
+    </div>
+
+    <div class="hobbies-container">
+        <div class="card">
+            <img src="../resources/img/hobby1.jpg" alt="Hobby 1">
+            <h3>PC Building</h3>
+            <p>Building PCs ignited my passion for technology by immersing me in the intricate world of hardware, inspiring 
+                me to explore system optimization, component engineering, and the mechanics behind cutting-edge performance</p>
+        </div>
+        <div class="card">
+            <img src="../resources/img/hobby2.jpg" alt="Hobby 2">
+            <h3>Gaming</h3>
+            <p>Gaming sparked my passion for technology by immersing me in interactive worlds, inspiring 
+            me to explore coding, game development, and the mechanics behind digital innovation</p>
+        </div>
+        <div class="card">
+            <img src="../resources/img/hobby3.jpg" alt="Hobby 3">
+            <h3>Badminton</h3>
+            <p>Badminton became my gateway to passion and perseverance, teaching me the art of precision, speed, and strategy 
+                on the court. It pushed me to hone my reflexes, embrace challenges, and appreciate the balance between individual 
+                skill and teamwork</p>
         </div>
     </div>
 
